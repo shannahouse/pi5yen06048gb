@@ -46,7 +46,7 @@ def analyze_customer_message(user_message: str) -> dict:
 
     # 2. 呼叫模型並要求 JSON 格式輸出
     response = client.models.generate_content(
-        model="gemini-3.8-flash",
+        model="gemini-3.6-flash",
         contents=user_message,
         config=types.GenerateContentConfig(
             system_instruction=system_instruction,
